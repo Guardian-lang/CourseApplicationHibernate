@@ -15,7 +15,7 @@ import java.util.List;
 @Entity
 @Table(name = "theme")
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class Theme {
+public class Theme implements BaseEntity<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

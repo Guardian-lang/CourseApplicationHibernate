@@ -16,7 +16,7 @@ import java.util.List;
 @Entity
 @Table(name = "admin")
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class Admin {
+public class Admin implements BaseEntity<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

@@ -14,7 +14,7 @@ import java.sql.Date;
 @Entity
 @Table(name = "article")
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class Article {
+public class Article implements BaseEntity<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

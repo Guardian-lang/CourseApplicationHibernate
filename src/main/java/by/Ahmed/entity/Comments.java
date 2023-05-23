@@ -13,7 +13,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "comments")
 @org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
-public class Comments {
+public class Comments implements BaseEntity<Long> {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
