@@ -1,6 +1,7 @@
 package by.Ahmed.entity;
 
 import lombok.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 import java.sql.Date;
@@ -12,6 +13,7 @@ import java.sql.Date;
 @Builder
 @Entity
 @Table(name = "article")
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class Article {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

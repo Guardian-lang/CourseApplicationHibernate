@@ -1,6 +1,7 @@
 package by.Ahmed.entity;
 
 import lombok.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 
@@ -11,6 +12,7 @@ import javax.persistence.*;
 @Builder
 @Entity
 @Table(name = "comments")
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class Comments {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

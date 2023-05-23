@@ -2,6 +2,7 @@ package by.Ahmed.entity;
 
 import by.Ahmed.converter.BirthdayConverter;
 import lombok.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name = "admin")
+@org.hibernate.annotations.Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
