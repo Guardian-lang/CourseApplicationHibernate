@@ -13,7 +13,5 @@ public record AuthorReadDto (Long id,
                             String occupation,
                             String jobTitle,
                             CheckStatus checkStatus,
-                            String about,
-                            String email,
-                            String password) {
+                            String about) {
 }

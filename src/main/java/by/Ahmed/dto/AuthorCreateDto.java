@@ -18,7 +18,5 @@ public record AuthorCreateDto(
         String occupation,
         String jobTitle,
         CheckStatus checkStatus,
-        String about,
-        String email,
-        String password) {
+        String about) {
 }

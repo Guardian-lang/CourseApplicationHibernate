@@ -2,7 +2,7 @@ package by.Ahmed.dto;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
-import java.time.LocalDate;
+import java.sql.Date;
 
 public record ArticleCreateDto(
         @Valid
@@ -11,6 +11,6 @@ public record ArticleCreateDto(
         Long themeId,
         Long authorId,
         String title,
-        LocalDate date,
+        Date date,
         String text) {
 }

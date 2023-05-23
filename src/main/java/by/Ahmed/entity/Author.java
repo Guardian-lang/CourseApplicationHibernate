@@ -1,10 +1,10 @@
 package by.Ahmed.entity;
 
-import by.Ahmed.converter.BirthdayConverter;
 import lombok.*;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import javax.persistence.*;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,9 +26,8 @@ public class Author implements BaseEntity<Long> {
     private String lastName;
     @Enumerated(EnumType.STRING)
     private Gender gender;
-    @Convert(converter = BirthdayConverter.class)
     @Column(name = "birth_date")
-    private Birthday birthDate;
+    private Date birthDate;
     private String occupation;
     @Column(name = "job_title")
     private String jobTitle;
