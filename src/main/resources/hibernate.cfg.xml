@@ -13,12 +13,12 @@
     <property name="format_sql">true</property>
     <property name="hibernate.cache.use_second_level_cache">true</property>
     <property name="hibernate.cache.region.factory_class">org.hibernate.cache.jcache.internal.JCacheRegionFactory</property>
-    <mapping class="by.Ahmed.entity.Article"/>
-    <mapping class="by.Ahmed.entity.Admin"/>
-    <mapping class="by.Ahmed.entity.Author"/>
-    <mapping class="by.Ahmed.entity.Theme"/>
-    <mapping class="by.Ahmed.entity.User"/>
-    <mapping class="by.Ahmed.entity.Comments"/>
+    <mapping class="by.ahmed.entity.Article"/>
+    <mapping class="by.ahmed.entity.Admin"/>
+    <mapping class="by.ahmed.entity.Author"/>
+    <mapping class="by.ahmed.entity.Theme"/>
+    <mapping class="by.ahmed.entity.User"/>
+    <mapping class="by.ahmed.entity.Comments"/>
     <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 
