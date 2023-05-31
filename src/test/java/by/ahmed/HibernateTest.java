@@ -1,7 +1,10 @@
 package by.ahmed;
 
+import by.ahmed.dto.AuthorDto;
 import by.ahmed.entity.*;
 import by.ahmed.utils.HibernateUtil;
+import by.ahmed.validator.authorValidator.NewAuthorValidator;
+import junit.framework.Assert;
 import lombok.Cleanup;
 import org.junit.jupiter.api.Test;
 
